@@ -29,6 +29,24 @@ a{
 .section-title span{
     color: forestgreen;
 }
+
+.cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: forestgreen;
+    background-color: transparent;
+    border: 2px solid forestgreen;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+
+}
+.cta:hover{
+    color: ghostwhite;
+    background-color: forestgreen;
+}
 /*Hero section*/
 #hero{
     background-image: url(../img/king.jpg);
@@ -92,23 +110,7 @@ a{
 #hero h1:nth-child(3) span{
     animation-delay: 3s;
 }
-#hero .cta{
-    display: inline-block;
-    padding: 10px 30px;
-    color: forestgreen;
-    background-color: transparent;
-    border: 2px solid forestgreen;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    margin-top: 30px;
-    transition: .3s ease background-color;
 
-}
-#hero .cta:hover{
-    color: ghostwhite;
-    background-color: forestgreen;
-}
 
 /*End Hero section*/
 
@@ -255,6 +257,51 @@ a{
 }
 /*End Projects section*/
 
+/*About Section*/
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+#about .col-left{
+    width: 250px;
+    height: 340px;
+}
+#about .col-right{
+    width: 100%;
+
+}
+#about .col-right h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+#about .col-right p{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+#about .col-right .cta{
+    margin-bottom: 50px;
+    padding: 10px 20px;
+}
+#about .col-left .about-img {
+    position: relative;
+}
+#about .col-left .about-img::after{
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 19px;
+    height: 98%;
+    width: 98%;
+    border: 7px solid forestgreen;
+    z-index: -1;
+}
+
+/*End About Section*/
 /*keyframe*/
 @keyframes text_reveal_box{
     50%{
